@@ -1,0 +1,82 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+  font-size: 2rem;
+  background-color: #003f64;
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+button {
+  font-family: cursive;
+
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+button:hover {
+  opacity: 0.5;
+  transition: opacity 200ms ease-in-out;
+}
+body.right {
+  background-color: #005828;
+}
+body.wrong {
+  background-color: #6c0901;
+}
+.container {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
+}
+.answers-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+}
+
+.answer {
+  background-color: #008be2;
+  border: 1px solid blue;
+  /* font-weight: bold; */
+  color: whitesmoke;
+}
+.right {
+  background-color: #00db68;
+  color: black;
+  border: none;
+}
+.wrong {
+  color: black;
+
+  background-color: #fd1901;
+}
+.blocked {
+  pointer-events: none;
+}
+.clicked {
+  border: 3px solid black;
+  font-weight: bold;
+}
+#start-btn,
+#next-btn {
+  font-size: 2rem;
+  padding: 20px;
+  font-weight: bold;
+}
+#start-btn {
+  width: 200px;
+}
+.hide {
+  display: none;
+}
